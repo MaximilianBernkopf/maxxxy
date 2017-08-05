@@ -7,16 +7,23 @@
 #' \dontrun{
 #' detach_all_packages()
 #' }
+#'
+#' @importFrom utils sessionInfo
+#'
 #' @export
 
 detach_all_packages <- function() {
 
   base_packages <- paste0("package:", sessionInfo()$basePkgs)
 
-  package_list <- search()[ifelse(unlist(gregexpr("package:", search())) == 1, TRUE, FALSE)]
+  all_packages <- search()[ifelse(unlist(gregexpr("package:", search())) == 1, TRUE, FALSE)]
 
-  package_list <- setdiff(package_list, base_packages)
+  packages_to_remove <- setdiff(all_packages, base_packages)
 
-  if (length(package_list)>0)  for (package in package_list) detach(package, character.only = TRUE)
+  if (length(packages_to_remove)>0){
+    for (package in packages_to_remove) {
+      detach(package, character.only = TRUE)
+    }
+  }
 
 }

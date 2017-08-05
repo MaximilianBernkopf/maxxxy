@@ -14,4 +14,5 @@ detach_all_packages()
 \dontrun{
 detach_all_packages()
 }
+
 }
