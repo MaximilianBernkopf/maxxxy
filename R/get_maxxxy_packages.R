@@ -13,13 +13,17 @@ get_maxxxy_packages <- function() {
 
   database_packages  <- c('dbplyr', 'DBI', 'RPostgreSQL')
 
-  plotting_packages  <- c('plotly')
+  plotting_packages  <- c('plotly', 'dygraphs')
 
   logging_packages   <- c('logging')
 
   bitcoin_packages   <- c('Rbitcoin')
 
-  maxxxy_packages <- c(tidyverse_packages, database_packages, plotting_packages, logging_packages, bitcoin_packages)
+  ml_packages <- c('caret', 'xgboost', 'mxnet')
+
+  reporting_packages <- c('rmarkdown', 'shiny', 'shinydashboard')
+
+  maxxxy_packages <- c(tidyverse_packages, database_packages, plotting_packages, logging_packages, bitcoin_packages, ml_packages, reporting_packages)
 
   return(maxxxy_packages)
 
