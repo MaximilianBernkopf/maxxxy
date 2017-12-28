@@ -21,9 +21,21 @@ get_maxxxy_packages <- function() {
 
   ml_packages <- c('caret', 'xgboost', 'mxnet')
 
+  timeseries_packages <- c('xts', 'forecast')
+
   reporting_packages <- c('rmarkdown', 'shiny', 'shinydashboard')
 
-  maxxxy_packages <- c(tidyverse_packages, database_packages, plotting_packages, logging_packages, bitcoin_packages, ml_packages, reporting_packages)
+  writing_packages <- c('blogdown', 'bookdown')
+
+  maxxxy_packages <- c(tidyverse_packages,
+                       database_packages,
+                       plotting_packages,
+                       logging_packages,
+                       bitcoin_packages,
+                       timeseries_packages,
+                       ml_packages,
+                       reporting_packages,
+                       writing_packages)
 
   return(maxxxy_packages)
 
