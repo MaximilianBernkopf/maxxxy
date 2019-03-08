@@ -9,6 +9,7 @@
 #'
 #' @import dplyr
 #' @import multidplyr
+#' @importFrom utils timestamp
 #' @export
 #'
 batch_apply <- function(df, batch_size = 10000, function_to_apply_to_party_df, values_to_assign, packages) {

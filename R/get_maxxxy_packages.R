@@ -18,7 +18,7 @@ get_maxxxy_packages <- function() {
 
   bitcoin_packages <- c("Rbitcoin")
 
-  ml_packages <- c("caret", "xgboost", "mxnet")
+  ml_packages <- c("caret", "xgboost", "mxnet", "h2o")
 
   timeseries_packages <- c("xts", "forecast")
 
