@@ -2,7 +2,7 @@
 
 export(batch_apply)
 export(construct_submission_name)
-export(detatch_all_packages)
+export(detach_all_packages)
 export(get_maxxxy_packages)
 export(multiplot)
 import(dplyr)

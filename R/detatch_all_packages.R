@@ -1,19 +1,19 @@
-#' Detatch all packages
+#' Detach all packages
 #'
-#' \code{detatch_all_packages} detatches all currently loaded R packages except
+#' \code{detach_all_packages} detaches all currently loaded R packages except
 #' the base packages.
 #'
 #' @examples
 #'
 #' \dontrun{
-#' detatch_all_packages()
+#' detach_all_packages()
 #' }
 #'
 #' @importFrom utils sessionInfo
 #'
 #' @export
 
-detatch_all_packages <- function() {
+detach_all_packages <- function() {
 
   base_packages <- paste0("package:", sessionInfo()$basePkgs)
 

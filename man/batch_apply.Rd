@@ -4,8 +4,13 @@
 \alias{batch_apply}
 \title{Helper function to apply a function batchwise to a data frame}
 \usage{
-batch_apply(df, batch_size = 10000, function_to_apply_to_party_df,
-  values_to_assign, packages)
+batch_apply(
+  df,
+  batch_size = 10000,
+  function_to_apply_to_party_df,
+  values_to_assign,
+  packages
+)
 }
 \arguments{
 \item{df}{data frame}
